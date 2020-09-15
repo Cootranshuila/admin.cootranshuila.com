@@ -14,4 +14,7 @@
     <!-- Core css -->
     <link rel="stylesheet" href="{{ asset('assets/css/main.css') }}"/>
     <link rel="stylesheet" href="{{ asset('assets/css/theme4.css') }}" id="stylesheet"/>
+
+    {{-- CSRF Token --}}
+    <meta name="csrf-token" content="{{ csrf_token() }}">
 </head>

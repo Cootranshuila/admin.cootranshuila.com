@@ -1,18 +1,12 @@
 <div id="left-sidebar" class="sidebar">
     <div class="d-flex justify-content-between brand_name">
-        <h5 class="brand-name">{{ \Auth::user()->name }}</h5>
-        <div class="theme_btn">
-            <a class="theme1" data-toggle="tooltip" title="Theme Radical" href="#" onclick="setStyleSheet('assets/css/theme1.css', 0);"></a>
-            <a class="theme2" data-toggle="tooltip" title="Theme Turmeric" href="#" onclick="setStyleSheet('assets/css/theme2.css', 0);"></a>
-            <a class="theme3" data-toggle="tooltip" title="Theme Caribbean" href="#" onclick="setStyleSheet('assets/css/theme3.css', 0);"></a>
-            <a class="theme4" data-toggle="tooltip" title="Theme Cascade" href="#" onclick="setStyleSheet('assets/css/theme4.css', 0);"></a>
-        </div>
+        <h3 class="brand-name"><b>Cootranshuila</b></h3>
     </div>
     <div class="input-icon">
         <span class="input-icon-addon">
             <i class="fe fe-search"></i>
         </span>
-        <input type="text" class="form-control" placeholder="Search...">
+        <input type="text" class="form-control" placeholder="Buscar...">
     </div>
     <div class="tab-content">
         <div class="tab-pane fade active show" id="all-tab">

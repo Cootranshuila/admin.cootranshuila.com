@@ -5,3 +5,5 @@
 
 <!-- Start core js and page js -->
 <script src="{{ asset('assets/js/core.js') }}"></script>
+
+@yield('MyScripts')

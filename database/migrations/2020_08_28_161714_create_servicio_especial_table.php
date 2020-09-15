@@ -68,6 +68,7 @@ class CreateServicioEspecialTable extends Migration
             $table->longText('contratoObservaciones')->nullable();
             $table->dateTime('contratoFechaRealizado');
             $table->string('contratoValorLetra', 200);
+            $table->string('codeQR');
 
             $table->foreignId('user_id')
                 ->constrained()
