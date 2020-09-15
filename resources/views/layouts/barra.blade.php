@@ -2,7 +2,7 @@
     <div class="container">
         <div class="hleft">
             <div class="dropdown">
-                <a href="javascript:void(0)" class="nav-link user_btn"><img class="avatar" src="{{ asset('assets/images/user.png') }}" alt=""/></a>
+                <a href="javascript:void(0)" class="nav-link user_btn"><img class="avatar" src="{{ asset('assets/images/loog.png') }}" alt=""/></a>
                 <a href="page-search.html" class="nav-link icon"><i class="fa fa-search"></i></a>
                 <a href="index.html" class="nav-link icon"><i class="fa fa-home"></i></a>
                 <a href="app-email.html"  class="nav-link icon app_inbox"><i class="fa fa-envelope"></i></a>
