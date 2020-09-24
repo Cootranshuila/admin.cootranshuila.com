@@ -21,7 +21,7 @@
 <body class="font-opensans">
 
 <div class="auth">
-    <div class="card">
+    <div class="card" style="background: none !important;">
         <div class="text-center mb-5 px-5">
             <img src="{{ asset('assets/images/logo2.png') }}" alt="Logo Cootranshuila ligth">
         </div>
