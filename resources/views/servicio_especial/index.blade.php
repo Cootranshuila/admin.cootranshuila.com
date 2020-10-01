@@ -59,7 +59,7 @@
                         </tbody>
                     </table>
 
-                    {{ $contratos->onEachSide(5)->links() }}
+                    {{ $contratos->onEachSide(1)->links() }}
 
                 </div>
             </div>
