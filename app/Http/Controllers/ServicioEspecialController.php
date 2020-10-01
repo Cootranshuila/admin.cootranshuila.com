@@ -26,7 +26,7 @@ class ServicioEspecialController extends Controller
     public function create(Request $request) {
 
         $date = Carbon::now('America/Bogota');
-    
+
         $data = $request->all();
 
         $data['contratoFechaRealizado'] = $date->isoFormat('Y-MM-D H:m:s');
@@ -51,7 +51,7 @@ class ServicioEspecialController extends Controller
             ]);
 
             if ($porcentaje->save()) {
-                
+
 
                 return redirect()->route('servicio-especial')->with(['creado' => 1, 'contrato_id' => $id_contrato]);
             }
@@ -62,7 +62,7 @@ class ServicioEspecialController extends Controller
 
     public function ver_contrato(Request $request) {
         $contrato = DB::select('SELECT * FROM `servicio_especial` WHERE MD5(id) = "'.$request['id'].'"');
-        
+
         return PDF::loadView('servicio_especial.contrato_pdf', compact(['contrato']))->stream('contrato.pdf');;
     }
 }

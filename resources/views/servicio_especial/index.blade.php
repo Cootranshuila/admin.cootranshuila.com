@@ -51,15 +51,15 @@
                                     <td>{{ $contrato->contratoNumeroInterno }}</td>
                                     <td>{{ $contrato->contratoPlaca }}</td>
                                     <td class="text-center">
-                                        <button type="button" class="btn btn-primary btn-sm" title="Edit"><i class="fa fa-edit"></i></button>
-                                        <button type="button" class="btn btn-danger btn-sm" title="Delete"><i class="fa fa-trash-o"></i></button>
+                                        <button type="button" class="btn btn-primary btn-sm" title="Ver"><i class="fa fa-eye"></i></button>
+                                        <button type="button" class="btn btn-info btn-sm" title="Imprimir"><i class="fa fa-print"></i></button>
                                     </td>
                                 </tr>
                             @endforeach
                         </tbody>
                     </table>
 
-                    {{ $contratos->links() }}
+                    {{ $contratos->onEachSide(5)->links() }}
 
                 </div>
             </div>
