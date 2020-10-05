@@ -9,6 +9,7 @@ use Illuminate\Support\Facades\DB;
 use App\Models\Servicio_especial;
 use Illuminate\Http\Request;
 use Carbon\Carbon;
+use App\Models\Ruta;
 use PDF;
 
 class ServicioEspecialController extends Controller
@@ -21,6 +22,22 @@ class ServicioEspecialController extends Controller
 
     public function crear() {
         return view('servicio_especial.crear');
+    }
+
+    public function search(Request $request) {
+        $contratos = Servicio_especial::where('contratoContratante', 'like', '%'.$request['search'].'%')
+                    ->orWhere('contratoFechaRealizado', 'like', '%'.$request['search'].'%')
+                    ->orWhere('contratoNumeroInterno', 'like', '%'.$request['search'].'%')
+                    ->orWhere('contratoPlaca', 'like', '%'.$request['search'].'%')
+                    ->orderBy('id', 'desc')->with('user')->paginate(10);
+
+        return view('servicio_especial.index', ['contratos' => $contratos]);
+    }
+
+    public function crear_ruta(Request $request) {
+        Ruta::create($request->all())->save();
+
+        return redirect()->back()->with(['ruta' => 1]);
     }
 
     public function create(Request $request) {

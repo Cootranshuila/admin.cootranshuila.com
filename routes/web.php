@@ -12,5 +12,8 @@ Route::group(['middleware' => ['permission:servicio especial|universal']], funct
     Route::get('/servicio-especial', 'ServicioEspecialController@index')->name('servicio-especial');
     Route::get('/servicio-especial/crear', 'ServicioEspecialController@crear');
     Route::post('/servicio-especial/create', 'ServicioEspecialController@create');
+    Route::get('/servicio-especial/search', 'ServicioEspecialController@search');
+    Route::post('/servicio-especial/crear-ruta', 'ServicioEspecialController@crear_ruta');
     Route::get('/servicio-especial/ver_contrato/{id}', 'ServicioEspecialController@ver_contrato')->name('ver-contrato');
 });
+

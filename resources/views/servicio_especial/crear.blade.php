@@ -6,10 +6,33 @@
 @section('content')
 
 <div class="section-body">
-    
+
+    @if (session()->has('ruta') && session('ruta') == 1)
+        <div class="alert alert-icon alert-success col-12" role="alert">
+            <i class="fe fe-check mr-2" aria-hidden="true"></i> Ruta creada correctamente
+        </div>
+    @endif
+
+    <div class="row mb-2">
+        <div class="row gutters-xs col-6">
+            <a href="/servicio-especial" class="btn btn-primary ml-2" >Atras</a>
+        </div>
+
+        <form action="/servicio-especial/crear-ruta" method="post" class="col-6 float-right">
+            @csrf
+
+            <div class="row gutters-xs">
+                <div class="col">
+                    <input type="text" class="form-control" name="rutaNombre" placeholder="Nueva Ruta" required>
+                </div>
+                <span class="col-auto"><button class="btn btn-success" type="submit"><i class="fe fe-save"></i></button></span>
+            </div>
+        </form>
+    </div>
+
     <form class="card" method="POST" action="/servicio-especial/create">
         @csrf
-        
+
         <div class="card-body">
             <h3 class="card-title">Crear Contrato </h3>
             <div class="row">
@@ -82,7 +105,7 @@
                         <label class="form-label">Origen</label>
                         <select class="form-control custom-select" name="contratoOrigen" required>
                             <option value="">Seleccione...</option>
-                            @foreach (\App\Models\Ruta::all() as $item)
+                            @foreach (\DB::select('select * from rutas group by rutaNombre order by rutaNombre asc') as $item)
                                 <option value="{{ $item->rutaNombre }}">{{ $item->rutaNombre }}</option>
                             @endforeach
                         </select>
@@ -93,7 +116,7 @@
                         <label class="form-label">Destino</label>
                         <select class="form-control custom-select" name="contratoDestino" required>
                             <option value="">Seleccione...</option>
-                            @foreach (\App\Models\Ruta::all() as $item)
+                            @foreach (\DB::select('select * from rutas group by rutaNombre order by rutaNombre asc') as $item)
                                 <option value="{{ $item->rutaNombre }}">{{ $item->rutaNombre }}</option>
                             @endforeach
                         </select>
@@ -374,7 +397,7 @@
                         <textarea rows="2" class="form-control" name="contratoObservaciones" placeholder="Escriba las observaciones"></textarea>
                     </div>
                 </div>
-    
+
             </div>
         </div>
         <div class="card-footer text-center">
@@ -383,7 +406,7 @@
     </form>
 
 </div>
-    
+
 @endsection
 
 
