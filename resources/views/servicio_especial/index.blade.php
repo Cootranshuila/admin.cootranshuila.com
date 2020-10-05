@@ -91,7 +91,7 @@
                                     <td>{{ $contrato->contratoPlaca }}</td>
                                     <td class="text-center">
                                         <button type="button" class="btn btn-primary btn-sm" title="Ver"><i class="fa fa-eye"></i></button>
-                                        <button type="button" class="btn btn-info btn-sm" title="Imprimir"><i class="fa fa-print"></i></button>
+                                        <a href="/servicio-especial/ver/{{ MD5($contrato->id) }}" target="_blank" class="btn btn-info btn-sm" title="Imprimir"><i class="fa fa-print"></i></a>
                                     </td>
                                 </tr>
                             @endforeach

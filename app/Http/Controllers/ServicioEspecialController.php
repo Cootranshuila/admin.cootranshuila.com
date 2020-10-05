@@ -68,8 +68,6 @@ class ServicioEspecialController extends Controller
             ]);
 
             if ($porcentaje->save()) {
-
-
                 return redirect()->route('servicio-especial')->with(['creado' => 1, 'contrato_id' => $id_contrato]);
             }
         }
