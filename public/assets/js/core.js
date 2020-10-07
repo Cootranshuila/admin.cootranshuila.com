@@ -1,6 +1,6 @@
 $(document).ready(function() {
-    "use strict";    
-    
+    "use strict";
+
     /** Constant div card */
     const DIV_CARD = 'div.card';
 
@@ -79,11 +79,11 @@ $(document).ready(function() {
             emptyFill: '#F4F4F4',
             lineCap: 'round'
             });
-        });        
+        });
     }
-    // (Optional) Active an item if it has the class "is-active"	
+    // (Optional) Active an item if it has the class "is-active"
     $(".accordion2 > .accordion-item.is-active").children(".accordion-panel").slideDown();
-    
+
     $(".accordion2 > .accordion-item").on('click',function() {
         // Cancel the siblings
         $(this).siblings(".accordion-item").removeClass("is-active").children(".accordion-panel").slideUp();
@@ -142,7 +142,7 @@ $(document).ready(function() {
     $('.menu_option').on('click', function() {
 		$('.metismenu').toggleClass('grid');
 		$('.menu_option').toggleClass('active');
-    });    
+    });
     // User Menu
     $('.user_btn').on('click', function() {
 		$('.user_div').toggleClass('open');
@@ -162,13 +162,13 @@ $(document).ready(function() {
     // Theme Light Dark
     $('.theme_switch').on('click', function() {
 		$('body').toggleClass('theme-dark');
-    });    
+    });
 });
 
 // Font Setting and icon
 $(document).ready(function() {
     "use strict";
-    // Font icon Setting 
+    // Font icon Setting
     $('.arrow_option input:radio').click(function () {
         var others = $("[name='" + this.name + "']").map(function () {
             return this.value
@@ -181,13 +181,13 @@ $(document).ready(function() {
         }).get().join(" ")
         $('.metismenu li .collapse a').removeClass(others).addClass(this.value)
     });
-    // Font Setting 
+    // Font Setting
     $('.font_setting input:radio').click(function () {
         var others = $("[name='" + this.name + "']").map(function () {
             return this.value
         }).get().join(" ")
         $('body').removeClass(others).addClass(this.value)
-    });  
+    });
 });
 
 // Switch Setting
@@ -209,7 +209,7 @@ $(document).ready(function() {
 		}else{
 			$('#page_top').removeClass('sticky-top');
 		}
-    }); 
+    });
 
     // icon-color
 	$(".setting_switch .btn-iconcolor").on('change',function() {
@@ -218,7 +218,7 @@ $(document).ready(function() {
 		}else{
 			$('body').removeClass('iconcolor');
 		}
-    });    
+    });
     // Gradient Color
 	$(".setting_switch .btn-gradient").on('change',function() {
 		if(this.checked) {
@@ -250,7 +250,7 @@ $(document).ready(function() {
 			$('#page_top').removeClass('top_dark');
 		}
     });
-    
+
     // Box Shadow
 	$(".setting_switch .btn-boxshadow").on('change',function() {
 		if(this.checked) {
@@ -286,12 +286,12 @@ $(document).ready(function() {
     var options = {
         valueNames: [ 'name', 'born' ]
       };
-      
-    var userList = new List('users', options); 
+
+    var userList = new List('users', options);
 });
 
 // H menu
-$(window).bind("resize", function () {    
+$(window).bind("resize", function () {
     if ($(this).width() < 1201) {
         $('.horizontal').removeClass('h_menu')
     } else {
@@ -340,7 +340,7 @@ window.anchor= {
         'purple-light': '#c08ef0',
         'purple-lighter': '#e4cff9',
         'purple-lightest': '#f6effd',
-        
+
         'pink': '#f66d9b',
         'pink-darkest': '#31161f',
         'pink-darker': '#622c3e',
@@ -348,7 +348,7 @@ window.anchor= {
         'pink-light': '#f999b9',
         'pink-lighter': '#fcd3e1',
         'pink-lightest': '#fef0f5',
-        
+
         'red': '#e74c3c',
         'red-darkest': '#2e0f0c',
         'red-darker': '#5c1e18',
@@ -397,8 +397,8 @@ window.anchor= {
         'cyan-dark': '#128293',
         'cyan-light': '#5dbecd',
         'cyan-lighter': '#b9e3ea',
-        'cyan-lightest': '#e8f6f8',        
-        
+        'cyan-lightest': '#e8f6f8',
+
         'gray': '#868e96',
         'gray-darkest': '#1b1c1e',
         'gray-darker': '#36393c',

@@ -17,3 +17,14 @@ Route::group(['middleware' => ['permission:servicio especial|universal']], funct
     Route::get('/servicio-especial/ver_contrato/{id}', 'ServicioEspecialController@ver_contrato')->name('ver-contrato');
 });
 
+// Rutas para Operativos
+Route::group(['middleware' => ['permission:sanciones|operativos|universal']], function () {
+    Route::group(['middleware' => ['operativos']], function () {
+        Route::get('/operativos', 'OperativosController@index')->name('operativos');
+    });
+
+    Route::get('/operativos/agregar', 'OperativosController@agregar');
+    Route::post('/operativos/create', 'OperativosController@create');
+});
+
+
