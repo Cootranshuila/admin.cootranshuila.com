@@ -23,10 +23,10 @@ class CreateOperativosTable extends Migration
             $table->string('placa_vehiculo', 7);
             $table->string('modalidad', 30);
             $table->integer('num_vehiculo');
-            $table->string('origen_ruta', 30);
+            $table->string('origen_ruta', 90);
             $table->time('hora_salida');
-            $table->string('destino_ruta', 30);
-            $table->string('sitio_operativo', 30);
+            $table->string('destino_ruta', 90);
+            $table->string('sitio_operativo', 90);
             $table->integer('pasajeros_con_tiquete');
             $table->integer('pasajeros_sin_tiquete');
             $table->string('presentacion_conductor', 30);

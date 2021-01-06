@@ -41,7 +41,7 @@
     <br><br>
 
     <p style="text-align: center;font-weight: bold;">CONTRATO DE PRESTACION DE SERVICIOS DE TRANSPORTE TERRESTRE SUSCRITO ENTRE:</p>
-    <p style="text-align: center;font-weight: bold;">No. 447</p>
+    <p style="text-align: center;font-weight: bold;">No. {{ $contrato[0]->id }}</p>
 
     <br>
     <br>
