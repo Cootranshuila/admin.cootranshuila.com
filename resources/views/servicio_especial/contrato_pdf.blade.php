@@ -145,7 +145,7 @@
 	<p><b>CONTRATANTE: {{ $contrato[0]->contratoContratante }}</b></p>
 	<p><b>NIT/CC: {{ $contrato[0]->contratoNit3 }} - {{ $contrato[0]->contratoNit4 }}</b></p>
 	<p><b>OBJETO CONTRATO: {{ $contrato[0]->contratoObjetivo }}</b></p>
-	<p><b>ORIGEN-DESTINO: {{ $contrato[0]->contratoOrigen }} - {{ $contrato[0]->contratoDestino }}</b></p>
+	<p><b>ORIGEN-DESTINO: {{ $contrato[0]->contratoOrigen }} - {{ $contrato[0]->contratoDestino }} Y VICEVERSA</b></p>
     <p><b>CONVENIO DE COLABORACIÓN: </b></p>
 
     <br>
@@ -214,7 +214,16 @@
             <tr>
                 <td style="padding: 3px;" colspan="2"><b>VIGILAGO </b><br><br><img width="180px" height="70px" src="{{ public_path() }}/assets/images/servicio-especial/logo3.jpg" alt=""></td>
                 <td style="padding: 3px;" colspan="2"><b>NEIVA,  AVENIDA 26 Nº 4 - 82<br>TELÉFONO: (057) 8756368 - 8756365<br><br><u>gerencia@cootranshuila.com</u><br><u>turismo@cootranshuila.com</u><br><u>www.cootranshuila.com</u></b></td>
-                <td style="padding: 3px;" colspan="2"><b><br><br><br><br><br><br><br>FIRMA Y SELLO</b></td>
+                <td style="padding: 3px;" colspan="2">
+                    <b>
+                        {{-- <br><br><br><br><br><br><br> --}}
+                        <br>
+                        <br>
+                        <img width="100" src="{{ public_path() }}/assets/images/servicio-especial/firma_diego.jpeg" alt="">
+                        <br>
+                        FIRMA Y SELLO
+                    </b>
+                </td>
             </tr>
         </tbody>
     </table>
