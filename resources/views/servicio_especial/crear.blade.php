@@ -126,7 +126,7 @@
                 <div class="col-md-12">
                     <div class="form-group">
                         <label class="form-label text-center">Recorrido</label>
-                        <textarea rows="2" class="form-control" name="contratoRecorrido" placeholder="Escriba el recorrido"></textarea>
+                        <textarea rows="2" class="form-control" name="contratoRecorrido" placeholder="Escriba el recorrido" required></textarea>
                     </div>
                 </div>
 
@@ -225,7 +225,7 @@
                 <div class="col-md-12">
                     <div class="form-group">
                         <label class="form-label text-center">Caracteristicas</label>
-                        <textarea rows="2" class="form-control" name="contratoCarateVehiculo" placeholder="Escriba las caracteristicas del vehiculo"></textarea>
+                        <textarea rows="2" class="form-control" name="contratoCarateVehiculo" placeholder="Escriba las caracteristicas del vehiculo" required></textarea>
                     </div>
                 </div>
 

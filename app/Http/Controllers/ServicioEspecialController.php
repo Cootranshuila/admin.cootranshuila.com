@@ -46,6 +46,8 @@ class ServicioEspecialController extends Controller
 
         $data = $request->all();
 
+        // dd($data);
+
         $data['contratoFechaRealizado'] = $date->isoFormat('Y-MM-D H:m:s');
         $data['user_id'] = auth()->user()->id;
 
