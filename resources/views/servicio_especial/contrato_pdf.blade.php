@@ -128,7 +128,7 @@
         <tbody>
             <tr>
                 <td style="border: none"><img width="230" src="{{ public_path() }}/assets/images/servicio-especial/logo1.png" alt=""></td>
-                <td style="border: none"><img width="90" src="{{ public_path() }}/assets/images/servicio-especial/logo1aux.jpg" alt=""></td>
+                <td style="border: none"><img width="90" src="{{ public_path() }}/assets/images/servicio-especial/applus.jpeg" alt=""></td>
                 <td style="border: none"><img width="190" src="{{ public_path() }}/assets/images/servicio-especial/logo.jpg" alt=""></td>
             </tr>
         </tbody>
