@@ -220,7 +220,8 @@
                         <br>
                         <br>
                         {{-- <img width="100" src="{{ public_path() }}/assets/images/servicio-especial/firma_diego.jpeg" alt=""> --}}
-                        <img width="180" src="{{ public_path() }}/assets/images/servicio-especial/firma-diego.png" alt="">
+                        {{-- <img width="180" src="{{ public_path() }}/assets/images/servicio-especial/firma-diego.png" alt=""> --}}
+                        <img width="180" src="{{ public_path() }}/assets/images/servicio-especial/firma_gerente.svg" alt="">
                         <br>
                         FIRMA Y SELLO
                     </b>
