@@ -25,8 +25,8 @@ class CreateServicioEspecialTable extends Migration
             $table->integer('contratoNit3');
             $table->integer('contratoNit4')->nullable();
             $table->longText('contratoObjetivo')->nullable();
-            $table->string('contratoOrigen', 15);
-            $table->string('contratoDestino', 15);
+            $table->string('contratoOrigen', 40);
+            $table->string('contratoDestino', 40);
             $table->longText('contratoRecorrido');
             $table->integer('contratoValor');
             $table->string('PagoForma', 10);
